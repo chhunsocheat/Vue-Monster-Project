@@ -92,3 +92,127 @@ button {
 #give-up:hover {
     background-color: #c7c7c7;
 }
+.button5 {
+    display: inline-block;
+    padding: 0.4em 1.6em;
+    border: 0.1em solid #000000;
+    margin:0 0.2em 0.2em 0;
+    border-radius:0.12em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    font-weight:300;
+    color:#000000;
+    text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
+    
+    background-color:#42cc8c;
+text-align:center;
+transition: all 0.15s;
+
+}
+.button5:hover{
+text-shadow: 0 0 2em rgba(255,255,255,1);
+color:#FFFFFF;
+border-color:#FFFFFF;
+}
+.button-attack {
+    display: inline-block;
+    padding: 0.4em 1.6em;
+    border: 0.1em solid #000000;
+    margin:0 0.2em 0.2em 0;
+    border-radius:0.12em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    font-weight:300;
+    color:#000000;
+    text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
+    
+    background-color:#ee183b;
+text-align:center;
+transition: all 0.15s;
+
+}
+.button-attack:hover{
+text-shadow: 0 0 2em rgba(255,255,255,1);
+color:#FFFFFF;
+border-color:#FFFFFF;
+}
+.button-special {
+    display: inline-block;
+    padding: 0.4em 1.6em;
+    border: 0.1em solid #000000;
+    margin:0 0.2em 0.2em 0;
+    border-radius:0.12em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    font-weight:300;
+    color:#000000;
+    text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
+    
+    background-color:#e4e128;
+text-align:center;
+transition: all 0.15s;
+
+}
+.button-special:hover{
+text-shadow: 0 0 2em rgba(255,255,255,1);
+color:#FFFFFF;
+border-color:#FFFFFF;
+}
+.button-heal {
+    display: inline-block;
+    padding: 0.4em 1.6em;
+    border: 0.1em solid #000000;
+    margin:0 0.2em 0.2em 0;
+    border-radius:0.12em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    font-weight:300;
+    color:#000000;
+    text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
+    
+    background-color:#42cc8c;
+text-align:center;
+transition: all 0.15s;
+
+}
+.button-heal:hover{
+text-shadow: 0 0 2em rgba(255,255,255,1);
+color:#FFFFFF;
+border-color:#FFFFFF;
+}
+.button-giveup {
+    display: inline-block;
+    padding: 0.4em 1.6em;
+    border: 0.1em solid #000000;
+    margin:0 0.2em 0.2em 0;
+    border-radius:0.12em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    font-weight:300;
+    color:#000000;
+    text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
+    
+    background-color:#d6eb1b;
+text-align:center;
+transition: all 0.15s;
+
+}
+.button-giveup:hover{
+text-shadow: 0 0 2em rgba(255,255,255,1);
+color:#FFFFFF;
+border-color:#FFFFFF;
+}
+@media all and (max-width:30em){
+.button5, .button-attack, .button-special, .button-heal, .button-giveup{
+display:block;
+margin:0.4em auto;
+}
+
+
+}
+
