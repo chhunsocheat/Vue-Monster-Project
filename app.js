@@ -3,7 +3,10 @@ new Vue({
     data:{
         playerHealth:100,
         monsterHealth:100,
-        gameIsRunning:false
+        gameIsRunning:false,
+        playerName:". ",
+        playerTurns:[],
+        monsterTurns:[]
     },
     methods:{
         startGame: function(){
@@ -12,9 +15,13 @@ new Vue({
             this.monsterHealth=100;
         },
         attack:function(){
-            
-            this.playerHealth-=this.calculateDamage(3,15);
-            this.monsterHealth-=this.calculateDamage(3,20);
+            let damage=this.calculateDamage(3,15);
+            this.playerHealth-=damage;
+            this.monsterAttack();
+            this.playerTurns.unshift({
+                isPlayer:true,
+                text:damage
+            })
             if(this.playerHealth<=0){
                 alert("You've Lost")
                 this.startGame();
@@ -22,6 +29,14 @@ new Vue({
                 alert("You have Won!!!")
                 this.startGame();
             }
+        },
+        monsterAttack(){
+            let damage=this.calculateDamage(3,20);
+            this.monsterHealth-=damage;
+            this.monsterTurns.unshift({
+                isPlayer:false,
+                text:damage
+            })
         },
         speacialAttack:function(){
             let max=20;

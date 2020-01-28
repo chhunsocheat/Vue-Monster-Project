@@ -8,9 +8,11 @@
 </head>
 <body>
 <div id="app">
+    <h1>Player Name </h1>
+    <input v-model="playerName">
     <section class="row">
         <div class="small-6 columns">
-            <h1 class="text-center">YOU</h1>
+            <h1 class="text-center">{{playerName}}</h1>
             <div class="healthbar">
                 <div class="healthbar text-center" 
                 style="background-color: green; margin: 0; color: white;"
@@ -47,10 +49,18 @@
     </section>
     <section class="row log">
         <div class="small-12 columns">
-            <ul>
-                <li>
-
+            <ul >
+                
+                <li v-for="turn in playerTurns"
+                
+                >
+                   <p> The Player attack for <span style="color: red;">{{turn.text}}</span> damage </p>
+                   
                 </li>
+                <li v-for="turn in monsterTurns">
+                    <p> The Monster attack for <span style="color: red;">{{turn.text}}</span> damage </p>
+                 </li>
+                 <hr>
             </ul>
         </div>
     </section>
