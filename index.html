@@ -8,9 +8,12 @@
 </head>
 <body>
 <div id="app">
-    <h1>Player Name </h1>
-    <input v-model="playerName">
     <section class="row">
+        <div class="playerName">
+        <h1>Player Name: </h1>
+        <input v-model="playerName">
+    </div>
+        <div class="container">
         <div class="small-6 columns">
             <h1 class="text-center">{{playerName}}</h1>
             <div class="healthbar">
@@ -33,6 +36,7 @@
                 </div>
             </div>
         </div>
+    </div>
     </section>
     <section class="row controls" v-if="gameIsRunning===false">
         <div class="small-12 columns">
