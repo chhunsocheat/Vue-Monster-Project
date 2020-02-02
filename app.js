@@ -4,11 +4,14 @@ new Vue({
         playerHealth:100,
         monsterHealth:100,
         gameIsRunning:false,
-        playerName:". ",
+        playerName:"Player Name",
         playerTurns:[],
         monsterTurns:[]
     },
     methods:{
+        setPlayerName(){
+
+        },
         startGame: function(){
             this.gameIsRunning=true;
             this.playerHealth=100;
@@ -23,10 +26,10 @@ new Vue({
                 text:damage
             })
             if(this.playerHealth<=0){
-                alert("You've Lost")
+                alert(`${this.playerName} have lost!!`)
                 this.startGame();
             }else if(this.monsterHealth<=0){
-                alert("You have Won!!!")
+                alert(`${this.playerName} have won!!`)
                 this.startGame();
             }
         },
