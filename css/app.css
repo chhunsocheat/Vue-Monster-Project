@@ -1,6 +1,7 @@
 .text-center {
     text-align: center;
 }
+<<<<<<< HEAD
 
 .container{
     display: flex;
@@ -11,6 +12,18 @@
    position: relative;
 }
 
+=======
+input{
+    display: block;
+}
+.container{
+    display: flex;
+}
+.playerName{
+    display: flex;
+    justify-content: center;
+}
+>>>>>>> 4c483d39c15740b173048d1771fafddc588033dc
 .healthbar {
     width: 80%;
     height: 40px;

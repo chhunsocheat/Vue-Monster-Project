@@ -14,8 +14,8 @@ new Vue({
         },
         startGame: function(){
             this.gameIsRunning=true;
-            this.playerHealth=100;
-            this.monsterHealth=100;
+            this.playerHealth=1000;
+            this.monsterHealth=1000;
         },
         attack:function(){
             let damage=this.calculateDamage(3,15);
@@ -26,7 +26,10 @@ new Vue({
                 text:damage
             })
             if(this.playerHealth<=0){
+
                 alert(`${this.playerName} have lost!!`)
+
+                alert(`${this.playerName} has lost`)
                 this.startGame();
             }else if(this.monsterHealth<=0){
                 alert(`${this.playerName} have won!!`)
