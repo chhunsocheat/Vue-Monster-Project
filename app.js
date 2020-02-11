@@ -44,6 +44,15 @@ new Vue({
                 text:damage
             })
         },
+        monsterAttack1(){
+            let damage=this.calculateDamage(3,20);
+            this.monsterHealth-=damage;
+            this.monsterTurns.unshift({
+                isPlayer:false,
+                text:damage
+            })
+        },
+
         speacialAttack:function(){
             let max=30;
             let min=1;
