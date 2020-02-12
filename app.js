@@ -54,8 +54,8 @@ new Vue({
         },
 
         speacialAttack:function(){
-            let max=30;
-            let min=1;
+            let max=20;
+            let min=5;
             let damage=Math.max(Math.floor(Math.random()*max)+1,min)
             this.playerHealth-=damage;
             this.monsterHealth-=damage;
@@ -72,6 +72,8 @@ new Vue({
             this.startGame();
         },
         calculateDamage:function(min,max){
+            console.log("this is the damages");
+            
             return Math.max(Math.floor(Math.random()*max)+1,min)
         }
     }
