@@ -10,7 +10,8 @@ new Vue({
     },
     methods:{
         setPlayerName(){
-
+            //this function is to set the name of the player
+            //But havent got the time to implement the method
         },
         startGame: function(){
             this.gameIsRunning=true;
